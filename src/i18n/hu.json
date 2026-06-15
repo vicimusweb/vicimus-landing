@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Vicimus — Egyedi szoftverfejlesztés",
+    "description": "Szoftverfejlesztő partner magyar és román vállalkozásoknak Nagyváradról.",
+    "ogLocale": "hu_HU"
+  },
+  "brand": { "name": "VICIMUS" },
+  "nav": {
+    "about": "Rólunk",
+    "services": "Szolgáltatások",
+    "contact": "Kapcsolat",
+    "menuOpen": "Menü megnyitása",
+    "menuClose": "Menü bezárása",
+    "status": "Elérhető új projektekre"
+  },
+  "hero": {
+    "eyebrow": "// Software development",
+    "headline": "Szoftver, ami a vállalkozásod nyelvén beszél.",
+    "subheadline": "Magyar és román cégeknek építünk egyedi webes, mobil és vállalati rendszereket Nagyváradról. Lorem ipsum dolor sit amet consectetur.",
+    "cta": "Ajánlatot kérek →",
+    "scrollHint": "Görgess"
+  },
+  "about": {
+    "eyebrow": "// Rólunk",
+    "heading": "Egy csapat. Két ország. Egy nyelv: kód.",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "stats": [
+      { "value": "50+", "label": "projekt" },
+      { "value": "8", "label": "év tapasztalat" },
+      { "value": "12", "label": "fős csapat" }
+    ]
+  },
+  "services": {
+    "eyebrow": "// Szolgáltatások",
+    "heading": "Egyedi szoftvert építünk, nem sablont.",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Webes alkalmazások, REST és GraphQL API-k, valós idejű rendszerek. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "p2": "Mobil iOS és Android — natívan vagy React Native-vel. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Vállalati ERP, CRM és belső eszközök.",
+    "p3": "DevOps, CI/CD, Kubernetes, felhőmigráció AWS-re és Azure-ra. Duis aute irure dolor in reprehenderit. Tanácsadás architektúrában és technológiai döntésekben.",
+    "capabilities": ["WEB", "MOBILE", "BACKEND", "DEVOPS", "CONSULTING"]
+  },
+  "contact": {
+    "eyebrow": "// Kapcsolat",
+    "heading": "Beszéljünk a projektedről.",
+    "supporting": "Írj egy emailt vagy hívj fel. Általában 24 órán belül válaszolunk.",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Email",
+    "phone": "+40 7XX XXX XXX",
+    "email": "hello@vicimus.com",
+    "emailSubject": "Ajánlatkérés",
+    "copy": "Másolás",
+    "copied": "Másolva"
+  },
+  "footer": {
+    "company": {
+      "name": "VICIMUS SRL",
+      "address": "410542 Oradea, Str. Nojoridului nr. 41/A, Romania",
+      "vatLabel": "ÁFA",
+      "vat": "RO40580438",
+      "regLabel": "Cégjegyzékszám",
+      "registration": "J05/543/2019",
+      "phoneLabel": "Tel",
+      "phone": "+40 7XX XXX XXX",
+      "emailLabel": "Email",
+      "email": "hello@vicimus.com"
+    },
+    "mapAriaLabel": "Iroda helyszín térképen",
+    "copyright": "© 2026 Vicimus SRL. Minden jog fenntartva."
+  },
+  "lang": {
+    "switchAriaLabel": "Nyelv váltása",
+    "hu": "HU",
+    "ro": "RO"
+  }
+}

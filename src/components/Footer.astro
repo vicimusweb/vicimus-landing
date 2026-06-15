@@ -1,0 +1,38 @@
+---
+import { dict, type Locale } from '../i18n/utils';
+import Map from './Map.astro';
+import LangSwitcher from './LangSwitcher.tsx';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = dict(locale);
+const c = t.footer.company;
+---
+<footer class="relative border-t border-border">
+  <div class="mx-auto max-w-content px-6 md:px-10 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div class="font-mono text-xs text-muted leading-relaxed space-y-2">
+      <div class="text-text uppercase">{c.name}</div>
+      <div>{c.address}</div>
+      <div>{c.vatLabel}: {c.vat}</div>
+      <div>{c.regLabel}: {c.registration}</div>
+      <div class="pt-3">
+        <span class="text-muted">{c.phoneLabel}:</span> <a href={`tel:${c.phone.replace(/\s+/g, '')}`} class="text-text hover:text-accent transition-colors">{c.phone}</a>
+      </div>
+      <div>
+        <span class="text-muted">{c.emailLabel}:</span> <a href={`mailto:${c.email}`} class="text-text hover:text-accent transition-colors">{c.email}</a>
+      </div>
+    </div>
+
+    <Map ariaLabel={t.footer.mapAriaLabel} />
+  </div>
+
+  <div class="border-t border-border">
+    <div class="mx-auto max-w-content px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="font-mono text-xs text-muted uppercase tracking-widest">{t.footer.copyright}</p>
+      <LangSwitcher client:visible locale={locale} ariaLabel={t.lang.switchAriaLabel} labels={{ hu: t.lang.hu, ro: t.lang.ro }} />
+    </div>
+  </div>
+</footer>

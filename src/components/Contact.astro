@@ -1,0 +1,86 @@
+---
+import { dict, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = dict(locale);
+const mailto = `mailto:${t.contact.email}?subject=${encodeURIComponent(t.contact.emailSubject)}`;
+const tel = `tel:${t.contact.phone.replace(/\s+/g, '')}`;
+---
+<section id="contact" class="relative border-t border-border">
+  <div class="mx-auto max-w-content px-6 md:px-10 py-20 md:py-32 text-center">
+    <p data-animate class="font-mono text-xs uppercase tracking-widest text-muted mb-6">
+      {t.contact.eyebrow}
+    </p>
+    <h2
+      data-animate
+      class="font-medium text-text mx-auto max-w-3xl"
+      style="font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.03em; line-height: 1.1;"
+    >
+      {t.contact.heading}
+    </h2>
+    <p data-animate class="mt-6 max-w-xl mx-auto text-muted leading-relaxed">
+      {t.contact.supporting}
+    </p>
+
+    <div data-animate class="mt-16 space-y-8">
+      <div class="flex items-center justify-center gap-4 flex-wrap">
+        <a href={tel} class="text-2xl md:text-4xl font-medium text-text hover:text-accent transition-colors" style="letter-spacing: -0.02em;">
+          {t.contact.phone}
+        </a>
+        <button
+          class="copy-btn font-mono text-xs uppercase tracking-widest text-muted hover:text-text px-3 py-2 border border-border rounded-full transition-colors"
+          data-copy={t.contact.phone}
+          data-label={t.contact.copy}
+          data-label-copied={t.contact.copied}
+          aria-label={`${t.contact.copy} ${t.contact.phoneLabel}`}
+          type="button"
+        >
+          {t.contact.copy}
+        </button>
+      </div>
+      <div class="flex items-center justify-center gap-4 flex-wrap">
+        <a href={mailto} class="text-2xl md:text-4xl font-medium text-text hover:text-accent transition-colors" style="letter-spacing: -0.02em;">
+          {t.contact.email}
+        </a>
+        <button
+          class="copy-btn font-mono text-xs uppercase tracking-widest text-muted hover:text-text px-3 py-2 border border-border rounded-full transition-colors"
+          data-copy={t.contact.email}
+          data-label={t.contact.copy}
+          data-label-copied={t.contact.copied}
+          aria-label={`${t.contact.copy} ${t.contact.emailLabel}`}
+          type="button"
+        >
+          {t.contact.copy}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.copy-btn');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const text = btn.dataset.copy ?? '';
+        const label = btn.dataset.label ?? 'Copy';
+        const copied = btn.dataset.labelCopied ?? 'Copied';
+        try {
+          await navigator.clipboard.writeText(text);
+          btn.textContent = copied;
+          btn.classList.add('text-accent', 'border-accent');
+          setTimeout(() => {
+            btn.textContent = label;
+            btn.classList.remove('text-accent', 'border-accent');
+          }, 1500);
+        } catch {
+          // clipboard API unavailable — silent no-op
+        }
+      });
+    });
+  });
+</script>

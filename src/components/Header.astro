@@ -1,0 +1,83 @@
+---
+import { dict, localizedPath, type Locale } from '../i18n/utils';
+import LangSwitcher from './LangSwitcher.tsx';
+import MobileMenu from './MobileMenu.tsx';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = dict(locale);
+const navItems = [
+  { href: '#about', label: t.nav.about },
+  { href: '#services', label: t.nav.services },
+  { href: '#contact', label: t.nav.contact },
+];
+---
+<header
+  id="site-header"
+  class="fixed top-0 inset-x-0 z-50 transition-colors duration-300 backdrop-blur-md bg-bg/40 border-b border-transparent"
+>
+  <div class="mx-auto max-w-content px-6 md:px-10 h-16 flex items-center justify-between">
+    <a href={localizedPath(locale, '/')} class="font-mono font-medium tracking-tightest text-text text-sm uppercase">
+      {t.brand.name}
+    </a>
+
+    <div class="hidden lg:flex items-center gap-2.5">
+      <span class="relative flex h-1.5 w-1.5" aria-hidden="true">
+        <span class="absolute inset-0 rounded-full bg-accent opacity-60 animate-ping"></span>
+        <span class="relative rounded-full h-1.5 w-1.5 bg-accent"></span>
+      </span>
+      <span class="font-mono text-[10px] uppercase tracking-widest text-muted">{t.nav.status}</span>
+    </div>
+
+    <nav aria-label="Primary" class="hidden md:flex items-center gap-10">
+      {navItems.map((item) => (
+        <a href={item.href} class="text-sm text-muted hover:text-text transition-colors">
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="hidden md:block">
+      <LangSwitcher client:load locale={locale} ariaLabel={t.lang.switchAriaLabel} labels={{ hu: t.lang.hu, ro: t.lang.ro }} />
+    </div>
+
+    <div class="md:hidden">
+      <MobileMenu
+        client:load
+        locale={locale}
+        navItems={navItems}
+        labels={{
+          open: t.nav.menuOpen,
+          close: t.nav.menuClose,
+          switchAria: t.lang.switchAriaLabel,
+          hu: t.lang.hu,
+          ro: t.lang.ro,
+        }}
+      />
+    </div>
+  </div>
+</header>
+
+<script>
+  let headerScrollHandler: (() => void) | null = null;
+
+  document.addEventListener('astro:page-load', () => {
+    if (headerScrollHandler) {
+      window.removeEventListener('scroll', headerScrollHandler);
+    }
+    const header = document.getElementById('site-header');
+    if (!header) return;
+    headerScrollHandler = () => {
+      const scrolled = window.scrollY > 32;
+      header.classList.toggle('bg-bg/40', !scrolled);
+      header.classList.toggle('bg-surface', scrolled);
+      header.classList.toggle('border-transparent', !scrolled);
+      header.classList.toggle('border-border', scrolled);
+    };
+    headerScrollHandler();
+    window.addEventListener('scroll', headerScrollHandler, { passive: true });
+  });
+</script>

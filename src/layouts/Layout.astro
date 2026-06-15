@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
+import NoiseOverlay from '../components/NoiseOverlay.astro';
+import { dict, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = dict(locale);
+const selfPath = locale === 'hu' ? '/' : '/ro';
+const site = Astro.site?.toString() ?? 'https://vicimus.com';
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0A0A0A" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:locale" content={t.meta.ogLocale} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`${site}${selfPath}`} />
+
+    <link rel="alternate" hreflang="hu" href={`${site}/`} />
+    <link rel="alternate" hreflang="ro" href={`${site}/ro`} />
+    <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+    <link rel="canonical" href={`${site}${selfPath}`} />
+    <ViewTransitions />
+  </head>
+  <body class="bg-bg text-text antialiased">
+    <NoiseOverlay />
+    <slot />
+
+    <script>
+      // Fade-in observer for [data-animate]
+      document.addEventListener('astro:page-load', () => {
+        const els = document.querySelectorAll<HTMLElement>('[data-animate]');
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-visible');
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { rootMargin: '0px 0px -10% 0px', threshold: 0.05 }
+        );
+        els.forEach((el) => io.observe(el));
+      });
+    </script>
+  </body>
+</html>

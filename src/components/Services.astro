@@ -1,0 +1,37 @@
+---
+import { dict, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = dict(locale);
+---
+<section id="services" class="relative border-t border-border">
+  <div class="mx-auto max-w-content px-6 md:px-10 py-20 md:py-32">
+    <p data-animate class="font-mono text-xs uppercase tracking-widest text-muted mb-6">
+      {t.services.eyebrow}
+    </p>
+    <h2
+      data-animate
+      class="font-medium text-text max-w-3xl"
+      style="font-size: clamp(2rem, 4.5vw, 3.75rem); letter-spacing: -0.03em; line-height: 1.1;"
+    >
+      {t.services.heading}
+    </h2>
+    <div data-animate class="mt-10 max-w-[700px] space-y-6 text-muted leading-relaxed">
+      <p>{t.services.p1}</p>
+      <p>{t.services.p2}</p>
+      <p>{t.services.p3}</p>
+    </div>
+
+    <ul data-animate class="mt-16 flex flex-wrap gap-3">
+      {t.services.capabilities.map((cap) => (
+        <li class="font-mono text-xs uppercase tracking-widest text-muted px-4 py-2 border border-border rounded-full">
+          [ {cap} ]
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
