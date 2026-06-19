@@ -25,6 +25,23 @@ const t = dict(locale);
       <p>{t.about.p2}</p>
     </div>
 
+    <p data-animate class="mt-20 font-mono text-xs uppercase tracking-widest text-muted">
+      {t.about.valuesLabel}
+    </p>
+    <dl data-animate class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl">
+      {t.about.values.map((v, i) => (
+        <div class="flex gap-4 border-t border-border pt-6">
+          <span class="font-mono text-xs uppercase tracking-widest text-accent pt-1">
+            {String(i + 1).padStart(2, '0')}
+          </span>
+          <div>
+            <dt class="text-text font-medium" style="letter-spacing: -0.01em;">{v.title}</dt>
+            <dd class="mt-2 text-muted leading-relaxed">{v.body}</dd>
+          </div>
+        </div>
+      ))}
+    </dl>
+
     <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border">
       {t.about.stats.map((s) => (
         <div data-animate class="bg-bg p-8 md:p-10">

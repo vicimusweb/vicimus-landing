@@ -10,8 +10,31 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = dict(locale);
-const selfPath = locale === 'hu' ? '/' : '/ro';
-const site = Astro.site?.toString() ?? 'https://vicimus.com';
+const selfPath = locale === 'hu' ? '/' : '/ro/';
+const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://vicimussolutions.com';
+const canonical = `${site}${selfPath}`;
+const altHref = locale === 'hu' ? `${site}/ro/` : `${site}/`;
+const ogImage = `${site}/og-image.svg`;
+const siteName = 'Vicimus';
+
+const company = t.footer.company;
+const organizationLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: company.name,
+  url: `${site}/`,
+  logo: `${site}/favicon.svg`,
+  email: company.email,
+  vatID: company.vat,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: company.address,
+    addressLocality: 'Oradea',
+    postalCode: '410542',
+    addressCountry: 'RO',
+  },
+  sameAs: [],
+};
 ---
 <!doctype html>
 <html lang={locale}>
@@ -24,17 +47,32 @@ const site = Astro.site?.toString() ?? 'https://vicimus.com';
 
     <title>{t.meta.title}</title>
     <meta name="description" content={t.meta.description} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
 
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={locale} href={canonical} />
+    <link rel="alternate" hreflang={locale === 'hu' ? 'ro' : 'hu'} href={altHref} />
+    <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={t.meta.title} />
     <meta property="og:description" content={t.meta.description} />
     <meta property="og:locale" content={t.meta.ogLocale} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={`${site}${selfPath}`} />
+    <meta property="og:locale:alternate" content={locale === 'hu' ? 'ro_RO' : 'hu_HU'} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={t.meta.title} />
 
-    <link rel="alternate" hreflang="hu" href={`${site}/`} />
-    <link rel="alternate" hreflang="ro" href={`${site}/ro`} />
-    <link rel="alternate" hreflang="x-default" href={`${site}/`} />
-    <link rel="canonical" href={`${site}${selfPath}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={t.meta.title} />
+    <meta name="twitter:description" content={t.meta.description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(organizationLd)} />
+
     <ViewTransitions />
   </head>
   <body class="bg-bg text-text antialiased">

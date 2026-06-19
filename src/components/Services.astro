@@ -20,11 +20,25 @@ const t = dict(locale);
     >
       {t.services.heading}
     </h2>
-    <div data-animate class="mt-10 max-w-[700px] space-y-6 text-muted leading-relaxed">
-      <p>{t.services.p1}</p>
-      <p>{t.services.p2}</p>
-      <p>{t.services.p3}</p>
-    </div>
+    <p data-animate class="mt-8 max-w-2xl text-muted leading-relaxed">
+      {t.services.intro}
+    </p>
+
+    <ol data-animate class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border">
+      {t.services.items.map((item, i) => (
+        <li class="bg-bg p-8 md:p-10 flex flex-col gap-4">
+          <span class="font-mono text-xs uppercase tracking-widest text-accent">
+            {String(i + 1).padStart(2, '0')}
+          </span>
+          <h3 class="font-medium text-text" style="font-size: clamp(1.25rem, 2vw, 1.625rem); letter-spacing: -0.02em; line-height: 1.2;">
+            {item.title}
+          </h3>
+          <p class="text-muted leading-relaxed">
+            {item.body}
+          </p>
+        </li>
+      ))}
+    </ol>
 
     <ul data-animate class="mt-16 flex flex-wrap gap-3">
       {t.services.capabilities.map((cap) => (

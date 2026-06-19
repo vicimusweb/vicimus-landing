@@ -4,6 +4,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   output: 'static',
+  site: 'https://vicimussolutions.com',
   integrations: [
     react(),
     tailwind({ applyBaseStyles: false }),

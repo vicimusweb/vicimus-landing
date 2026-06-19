@@ -1,30 +1,37 @@
 {
   "meta": {
-    "title": "Vicimus — Dezvoltare software la comandă",
-    "description": "Partener de dezvoltare software pentru companii din România și Ungaria, din Oradea.",
+    "title": "Vicimus — Dezvoltare software și soluții digitale",
+    "description": "Sisteme digitale care aduc creștere reală pentru afaceri. Software la comandă, platforme web și ecosisteme integrate, din Oradea.",
     "ogLocale": "ro_RO"
   },
   "brand": { "name": "VICIMUS" },
   "nav": {
     "about": "Despre",
-    "services": "Servicii",
+    "services": "Ce facem",
     "contact": "Contact",
     "menuOpen": "Deschide meniul",
     "menuClose": "Închide meniul",
     "status": "Disponibil pentru proiecte noi"
   },
   "hero": {
-    "eyebrow": "// Software development",
-    "headline": "Software care vorbește limba afacerii tale.",
-    "subheadline": "Construim aplicații web, mobile și sisteme enterprise pentru companii din România și Ungaria, din Oradea. Lorem ipsum dolor sit amet consectetur.",
+    "eyebrow": "// Dezvoltare software & soluții digitale",
+    "headline": "Sisteme digitale care aduc creștere reală afacerii.",
+    "subheadline": "Vicimus este o companie inovatoare de dezvoltare software și tehnologie. Transformăm tehnologia modernă în rezultate de business — sisteme web, software la comandă și ecosisteme digitale complete, de la un singur partener.",
     "cta": "Cere o ofertă →",
     "scrollHint": "Scroll"
   },
   "about": {
     "eyebrow": "// Despre",
-    "heading": "O echipă. Două țări. O singură limbă: cod.",
-    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "heading": "Unde tehnologia devine valoare de business.",
+    "p1": "Dezvoltăm sisteme care nu doar funcționează, ci îmbunătățesc măsurabil eficiența, relațiile cu clienții și oportunitățile de venit. Fie că vorbim despre aplicații web, software la comandă sau ecosisteme integrate — scopul nostru este ca tehnologia să aducă rezultate de afaceri.",
+    "p2": "Credem că un software bun nu este doar o unealtă, ci un avantaj competitiv. Construim tehnologie care face funcționarea companiilor mai simplă, mai eficientă și mai profitabilă.",
+    "valuesLabel": "// De ce Vicimus",
+    "values": [
+      { "title": "Dezvoltare orientată pe business", "body": "Nu scriem doar cod — rezolvăm probleme de afaceri cu tehnologie." },
+      { "title": "Sisteme scalabile", "body": "Soluțiile noastre sunt construite să crească împreună cu compania ta." },
+      { "title": "Operare integrată", "body": "Conectăm vânzările, marketingul, relațiile cu clienții și operațiunile într-o singură platformă." },
+      { "title": "Suport continuu", "body": "Rămânem alături de tine și după lansare: mentenanță, dezvoltare, optimizare." }
+    ],
     "stats": [
       { "value": "50+", "label": "proiecte" },
       { "value": "8", "label": "ani experiență" },
@@ -32,21 +39,35 @@
     ]
   },
   "services": {
-    "eyebrow": "// Servicii",
+    "eyebrow": "// Ce facem",
     "heading": "Construim software la comandă, nu șabloane.",
-    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aplicații web, API-uri REST și GraphQL, sisteme în timp real. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "p2": "Mobile iOS și Android — nativ sau cu React Native. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ERP, CRM și unelte interne enterprise.",
-    "p3": "DevOps, CI/CD, Kubernetes, migrare în cloud spre AWS și Azure. Duis aute irure dolor in reprehenderit. Consultanță în arhitectură și decizii tehnologice.",
-    "capabilities": ["WEB", "MOBILE", "BACKEND", "DEVOPS", "CONSULTING"]
+    "intro": "Patru arii principale acoperă întregul spectru digital al companiilor noastre partenere — de la sisteme la comandă până la decizii bazate pe date.",
+    "items": [
+      {
+        "title": "Dezvoltare software la comandă",
+        "body": "Sisteme personalizate care se potrivesc exact nevoilor afacerii. Automatizăm procese, reducem munca manuală și construim soluții scalabile."
+      },
+      {
+        "title": "Sisteme web și platforme",
+        "body": "Aplicații web moderne, rapide și sigure, care susțin vânzările, gestionarea clienților și operațiunile interne."
+      },
+      {
+        "title": "Ecosisteme digitale",
+        "body": "Sisteme integrate care unesc vânzările, marketingul, suportul clienți și analiza datelor într-o singură platformă unitară."
+      },
+      {
+        "title": "Soluții de business bazate pe date",
+        "body": "Te ajutăm să interpretezi și să folosești datele, pentru ca afacerea ta să ia decizii mai rapide și mai precise."
+      }
+    ],
+    "capabilities": ["SOFTWARE LA COMANDĂ", "WEB & PLATFORM", "INTEGRARE", "ANALIZĂ DATE"]
   },
   "contact": {
     "eyebrow": "// Contact",
-    "heading": "Hai să vorbim despre proiectul tău.",
-    "supporting": "Scrie-ne un email sau sună-ne. Răspundem de obicei în 24 de ore.",
-    "phoneLabel": "Telefon",
+    "heading": "Hai să luăm legătura.",
+    "supporting": "Ai o idee sau o provocare de business? Te ajutăm să o realizezi — răspundem de obicei în 24 de ore.",
     "emailLabel": "Email",
-    "phone": "+40 7XX XXX XXX",
-    "email": "hello@vicimus.com",
+    "email": "info@vicimussolutions.com",
     "emailSubject": "Cerere de ofertă",
     "copy": "Copiază",
     "copied": "Copiat"
@@ -59,11 +80,10 @@
       "vat": "RO40580438",
       "regLabel": "Reg. com.",
       "registration": "J05/543/2019",
-      "phoneLabel": "Tel",
-      "phone": "+40 7XX XXX XXX",
       "emailLabel": "Email",
-      "email": "hello@vicimus.com"
+      "email": "info@vicimussolutions.com"
     },
+    "tagline": "Vicimus — unde tehnologia devine valoare de business.",
     "mapAriaLabel": "Locația biroului pe hartă",
     "copyright": "© 2026 Vicimus SRL. Toate drepturile rezervate."
   },
