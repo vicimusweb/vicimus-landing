@@ -34,7 +34,7 @@
     ],
     "stats": [
       { "value": "50+", "label": "projekt" },
-      { "value": "8", "label": "év tapasztalat" },
+      { "value": "3", "label": "év tapasztalat" },
       { "value": "12", "label": "fős csapat" }
     ]
   },
@@ -66,6 +66,8 @@
     "eyebrow": "// Kapcsolat",
     "heading": "Lépj velünk kapcsolatba.",
     "supporting": "Van egy ötleted vagy egy üzleti kihívásod? Segítünk megvalósítani — 24 órán belül válaszolunk.",
+    "phoneLabel": "Telefon",
+    "phone": "+40 757 340 751",
     "emailLabel": "Email",
     "email": "info@vicimussolutions.com",
     "emailSubject": "Ajánlatkérés",
@@ -80,6 +82,8 @@
       "vat": "RO40580438",
       "regLabel": "Cégjegyzékszám",
       "registration": "J05/543/2019",
+      "phoneLabel": "Tel",
+      "phone": "+40 757 340 751",
       "emailLabel": "Email",
       "email": "info@vicimussolutions.com"
     },

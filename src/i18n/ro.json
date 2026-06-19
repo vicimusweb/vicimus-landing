@@ -34,7 +34,7 @@
     ],
     "stats": [
       { "value": "50+", "label": "proiecte" },
-      { "value": "8", "label": "ani experiență" },
+      { "value": "3", "label": "ani experiență" },
       { "value": "12", "label": "membri echipă" }
     ]
   },
@@ -66,6 +66,8 @@
     "eyebrow": "// Contact",
     "heading": "Hai să luăm legătura.",
     "supporting": "Ai o idee sau o provocare de business? Te ajutăm să o realizezi — răspundem de obicei în 24 de ore.",
+    "phoneLabel": "Telefon",
+    "phone": "+40 757 340 751",
     "emailLabel": "Email",
     "email": "info@vicimussolutions.com",
     "emailSubject": "Cerere de ofertă",
@@ -80,6 +82,8 @@
       "vat": "RO40580438",
       "regLabel": "Reg. com.",
       "registration": "J05/543/2019",
+      "phoneLabel": "Tel",
+      "phone": "+40 757 340 751",
       "emailLabel": "Email",
       "email": "info@vicimussolutions.com"
     },
