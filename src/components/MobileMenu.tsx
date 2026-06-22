@@ -10,7 +10,7 @@ interface Props {
     open: string;
     close: string;
     switchAria: string;
-    hu: string;
+    en: string;
     ro: string;
   };
 }
@@ -58,7 +58,7 @@ export default function MobileMenu({ locale, navItems, labels }: Props) {
     };
   }, [open]);
 
-  const huHref = typeof window !== 'undefined' ? `/${window.location.hash}` : '/';
+  const enHref = typeof window !== 'undefined' ? `/${window.location.hash}` : '/';
   const roHref = typeof window !== 'undefined' ? `/ro${window.location.hash}` : '/ro';
 
   return (
@@ -101,8 +101,8 @@ export default function MobileMenu({ locale, navItems, labels }: Props) {
             ))}
           </nav>
           <div className="p-8 border-t border-border flex items-center justify-center gap-2" role="group" aria-label={labels.switchAria}>
-            <a href={huHref} className={`font-mono text-xs uppercase tracking-widest px-2 py-1 ${locale === 'hu' ? 'text-text' : 'text-muted'}`} aria-current={locale === 'hu' ? 'page' : undefined}>
-              {labels.hu}
+            <a href={enHref} className={`font-mono text-xs uppercase tracking-widest px-2 py-1 ${locale === 'en' ? 'text-text' : 'text-muted'}`} aria-current={locale === 'en' ? 'page' : undefined}>
+              {labels.en}
             </a>
             <span className="text-border">/</span>
             <a href={roHref} className={`font-mono text-xs uppercase tracking-widest px-2 py-1 ${locale === 'ro' ? 'text-text' : 'text-muted'}`} aria-current={locale === 'ro' ? 'page' : undefined}>

@@ -4,22 +4,22 @@ import type { Locale } from '../i18n/utils';
 interface Props {
   locale: Locale;
   ariaLabel: string;
-  labels: { hu: string; ro: string };
+  labels: { en: string; ro: string };
 }
 
 function targetHref(target: Locale): string {
-  if (typeof window === 'undefined') return target === 'hu' ? '/' : '/ro';
+  if (typeof window === 'undefined') return target === 'en' ? '/' : '/ro';
   const hash = window.location.hash;
-  const base = target === 'hu' ? '/' : '/ro';
+  const base = target === 'en' ? '/' : '/ro';
   return `${base}${hash}`;
 }
 
 export default function LangSwitcher({ locale, ariaLabel, labels }: Props) {
-  const [huHref, setHuHref] = useState('/');
+  const [enHref, setEnHref] = useState('/');
   const [roHref, setRoHref] = useState('/ro');
 
   useEffect(() => {
-    setHuHref(targetHref('hu'));
+    setEnHref(targetHref('en'));
     setRoHref(targetHref('ro'));
   }, []);
 
@@ -30,8 +30,8 @@ export default function LangSwitcher({ locale, ariaLabel, labels }: Props) {
 
   return (
     <div role="group" aria-label={ariaLabel} className="flex items-center gap-1">
-      <a href={huHref} className={`${linkBase} ${locale === 'hu' ? active : inactive}`} aria-current={locale === 'hu' ? 'page' : undefined}>
-        {labels.hu}
+      <a href={enHref} className={`${linkBase} ${locale === 'en' ? active : inactive}`} aria-current={locale === 'en' ? 'page' : undefined}>
+        {labels.en}
       </a>
       <span className="text-border">/</span>
       <a href={roHref} className={`${linkBase} ${locale === 'ro' ? active : inactive}`} aria-current={locale === 'ro' ? 'page' : undefined}>
