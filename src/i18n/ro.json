@@ -1,95 +1,91 @@
 {
   "meta": {
-    "title": "Vicimus — Dezvoltare software și soluții digitale",
-    "description": "Sisteme digitale care aduc creștere reală pentru afaceri. Software la comandă, platforme web și ecosisteme integrate, din Oradea.",
+    "title": "Simson Global — Intermediere transport marfă & logistică",
+    "description": "Sisteme de transport care duc afacerea ta mai departe. Intermediere transport marfă, comerț cu ridicata și depozitare, din Oradea.",
     "ogLocale": "ro_RO"
   },
-  "brand": { "name": "VICIMUS" },
+  "brand": { "name": "SIMSON GLOBAL" },
   "nav": {
     "about": "Despre",
     "services": "Ce facem",
     "contact": "Contact",
     "menuOpen": "Deschide meniul",
     "menuClose": "Închide meniul",
-    "status": "Disponibil pentru proiecte noi"
+    "status": "Disponibili pentru transporturi noi"
   },
   "hero": {
-    "eyebrow": "// Dezvoltare software & soluții digitale",
-    "headline": "Sisteme digitale care aduc creștere reală afacerii.",
-    "subheadline": "Vicimus este o companie inovatoare de dezvoltare software și tehnologie. Transformăm tehnologia modernă în rezultate de business — sisteme web, software la comandă și ecosisteme digitale complete, de la un singur partener.",
+    "eyebrow": "// Intermediere transport marfă & logistică",
+    "headline": "Sisteme de transport care duc afacerea ta mai departe.",
+    "subheadline": "Simson Global este o companie de intermediere transport marfă și logistică, dedicată conectării eficiente a expeditorilor cu transportatori de încredere. Transformăm nevoile tale de logistică în soluții concrete — intermediere transport marfă, comerț cu ridicata și depozitare, printr-un singur partener de încredere.",
     "cta": "Cere o ofertă →",
     "scrollHint": "Scroll"
   },
   "about": {
     "eyebrow": "// Despre",
-    "heading": "Unde tehnologia devine valoare de business.",
-    "p1": "Dezvoltăm sisteme care nu doar funcționează, ci îmbunătățesc măsurabil eficiența, relațiile cu clienții și oportunitățile de venit. Fie că vorbim despre aplicații web, software la comandă sau ecosisteme integrate — scopul nostru este ca tehnologia să aducă rezultate de afaceri.",
-    "p2": "Credem că un software bun nu este doar o unealtă, ci un avantaj competitiv. Construim tehnologie care face funcționarea companiilor mai simplă, mai eficientă și mai profitabilă.",
-    "valuesLabel": "// De ce Vicimus",
+    "heading": "Unde logistica devine avantaj de business.",
+    "p1": "Construim relații de transport care nu doar funcționează — reduc timpii de livrare, optimizează costurile și întăresc încrederea partenerilor tăi. Fie că este vorba despre intermedierea unui transport de marfă, distribuție cu ridicata sau depozitare, scopul nostru este ca fiecare colaborare să aducă rezultate măsurabile pentru afacerea ta.",
+    "p2": "Credem că un parteneriat logistic bun este mai mult decât un simplu transport — este un avantaj competitiv. Construim rețele de transport care fac operarea afacerilor partenerilor noștri mai simplă, mai eficientă și mai profitabilă.",
+    "valuesLabel": "// De ce Simson Global",
     "values": [
-      { "title": "Dezvoltare orientată pe business", "body": "Nu scriem doar cod — rezolvăm probleme de afaceri cu tehnologie." },
-      { "title": "Sisteme scalabile", "body": "Soluțiile noastre sunt construite să crească împreună cu compania ta." },
-      { "title": "Operare integrată", "body": "Conectăm vânzările, marketingul, relațiile cu clienții și operațiunile într-o singură platformă." },
-      { "title": "Suport continuu", "body": "Rămânem alături de tine și după lansare: mentenanță, dezvoltare, optimizare." }
+      { "title": "Logistică orientată pe business", "body": "Nu intermediem doar transport — rezolvăm provocări reale de logistică, adaptate fiecărui client." },
+      { "title": "Rețea scalabilă de transportatori", "body": "Parteneriatele noastre cu transportatorii sunt construite să crească odată cu volumul tău de expedieri." },
+      { "title": "Operațiuni integrate", "body": "Conectăm intermedierea transportului, comerțul cu ridicata și depozitarea într-un singur flux coerent." },
+      { "title": "Suport continuu", "body": "Rămânem alături de partenerii noștri pe tot parcursul colaborării: coordonare, monitorizare transport, optimizare rute." }
     ],
     "stats": [
-      { "value": "50+", "label": "proiecte" },
-      { "value": "3", "label": "ani experiență" },
-      { "value": "12", "label": "membri echipă" }
+      { "value": "500 RON", "label": "capital social vărsat integral" },
+      { "value": "2026", "label": "anul înființării" },
+      { "value": "Oradea, Bihor", "label": "sediu social" }
     ]
   },
   "services": {
     "eyebrow": "// Ce facem",
-    "heading": "Construim software la comandă, nu șabloane.",
-    "intro": "Patru arii principale acoperă întregul spectru digital al companiilor noastre partenere — de la sisteme la comandă până la decizii bazate pe date.",
+    "heading": "Construim soluții logistice la comandă, nu servicii de raft.",
+    "intro": "Trei arii principale acoperă nevoile de logistică ale partenerilor noștri — de la intermediere transport la comerț și depozitare.",
     "items": [
       {
-        "title": "Dezvoltare software la comandă",
-        "body": "Sisteme personalizate care se potrivesc exact nevoilor afacerii. Automatizăm procese, reducem munca manuală și construim soluții scalabile."
+        "title": "Intermediere transport marfă",
+        "body": "Conectăm expeditorii cu transportatori verificați, optimizăm rutele și negociem condiții avantajoase pentru fiecare transport."
       },
       {
-        "title": "Sisteme web și platforme",
-        "body": "Aplicații web moderne, rapide și sigure, care susțin vânzările, gestionarea clienților și operațiunile interne."
+        "title": "Comerț cu ridicata nespecializat",
+        "body": "Facilităm distribuția eficientă a mărfurilor către parteneri de afaceri, cu flexibilitate în volum și gamă de produse."
       },
       {
-        "title": "Ecosisteme digitale",
-        "body": "Sisteme integrate care unesc vânzările, marketingul, suportul clienți și analiza datelor într-o singură platformă unitară."
-      },
-      {
-        "title": "Soluții de business bazate pe date",
-        "body": "Te ajutăm să interpretezi și să folosești datele, pentru ca afacerea ta să ia decizii mai rapide și mai precise."
+        "title": "Servicii de depozitare",
+        "body": "Oferim soluții de depozitare temporară și gestionare a stocurilor, adaptate ritmului operațional al fiecărui client."
       }
     ],
-    "capabilities": ["SOFTWARE LA COMANDĂ", "WEB & PLATFORM", "INTEGRARE", "ANALIZĂ DATE"]
+    "capabilities": ["INTERMEDIERE TRANSPORT", "COMERȚ CU RIDICATA", "DEPOZITARE"]
   },
   "contact": {
     "eyebrow": "// Contact",
-    "heading": "Hai să luăm legătura.",
-    "supporting": "Ai o idee sau o provocare de business? Te ajutăm să o realizezi — răspundem de obicei în 24 de ore.",
+    "heading": "Hai să discutăm despre transportul tău.",
+    "supporting": "Ai marfă de expediat sau o provocare de logistică de rezolvat? Te ajutăm să găsești soluția potrivită — răspundem de obicei în 24 de ore.",
     "phoneLabel": "Telefon",
     "phone": "+40 757 340 751",
     "emailLabel": "Email",
-    "email": "info@vicimussolutions.com",
-    "emailSubject": "Cerere de ofertă",
+    "email": "info@simsontrans.com",
+    "emailSubject": "Cerere de transport",
     "copy": "Copiază",
     "copied": "Copiat"
   },
   "footer": {
     "company": {
-      "name": "VICIMUS SRL",
-      "address": "410542 Oradea, Str. Nojoridului nr. 41/A, Romania",
-      "vatLabel": "TVA",
-      "vat": "RO40580438",
+      "name": "SIMSON GLOBAL S.R.L.",
+      "address": "Municipiul Oradea, Str. Bârsei, Nr. 6, Bl. PB40, Ap. 1, Jud. Bihor, România",
+      "vatLabel": "CUI",
+      "vat": "RO53988138",
       "regLabel": "Reg. com.",
-      "registration": "J05/543/2019",
+      "registration": "J2026011014001",
       "phoneLabel": "Tel",
       "phone": "+40 757 340 751",
       "emailLabel": "Email",
-      "email": "info@vicimussolutions.com"
+      "email": "info@simsontrans.com"
     },
-    "tagline": "Vicimus — unde tehnologia devine valoare de business.",
+    "tagline": "Simson Global — unde logistica devine avantaj de business.",
     "mapAriaLabel": "Locația biroului pe hartă",
-    "copyright": "© 2026 Vicimus SRL. Toate drepturile rezervate."
+    "copyright": "© 2026 Simson Global S.R.L. Toate drepturile rezervate."
   },
   "lang": {
     "switchAriaLabel": "Schimbă limba",

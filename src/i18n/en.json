@@ -1,95 +1,91 @@
 {
   "meta": {
-    "title": "Vicimus — Software development and digital solutions",
-    "description": "Digital systems that drive real business growth. Custom software, web platforms and integrated ecosystems, from Oradea.",
+    "title": "Simson Global — Freight intermediation & logistics",
+    "description": "Transport systems that move your business forward. Freight intermediation, wholesale trade and warehousing, from Oradea.",
     "ogLocale": "en_US"
   },
-  "brand": { "name": "VICIMUS" },
+  "brand": { "name": "SIMSON GLOBAL" },
   "nav": {
     "about": "About",
     "services": "What we do",
     "contact": "Contact",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
-    "status": "Available for new projects"
+    "status": "Available for new shipments"
   },
   "hero": {
-    "eyebrow": "// Software development & digital solutions",
-    "headline": "Digital systems that drive business growth.",
-    "subheadline": "Vicimus is an innovative software development and technology company. We turn modern technology into business results — web systems, custom software and end-to-end digital ecosystems, from a single partner.",
+    "eyebrow": "// Freight intermediation & logistics",
+    "headline": "Transport systems that move your business forward.",
+    "subheadline": "Simson Global is a freight intermediation and logistics company, dedicated to efficiently connecting shippers with reliable carriers. We turn your logistics needs into concrete solutions — freight transport intermediation, wholesale trade and warehousing, through a single trusted partner.",
     "cta": "Request a quote →",
     "scrollHint": "Scroll"
   },
   "about": {
     "eyebrow": "// About",
-    "heading": "Where technology becomes business value.",
-    "p1": "We build systems that don't just work — they measurably improve efficiency, customer relationships and revenue opportunities. Whether it's web systems, custom software or integrated ecosystems, our goal is for technology to deliver business outcomes.",
-    "p2": "We believe great software is more than a tool — it's a competitive advantage. We build technology that makes companies simpler, more efficient and more profitable to operate.",
-    "valuesLabel": "// Why Vicimus",
+    "heading": "Where logistics becomes a business advantage.",
+    "p1": "We build transport relationships that don't just work — they cut delivery times, optimize costs and strengthen the trust of your partners. Whether it's intermediating a freight shipment, wholesale distribution or warehousing, our goal is for every collaboration to deliver measurable results for your business.",
+    "p2": "We believe a good logistics partnership is more than a simple transport job — it's a competitive advantage. We build transport networks that make our partners' businesses simpler, more efficient and more profitable to run.",
+    "valuesLabel": "// Why Simson Global",
     "values": [
-      { "title": "Business-driven development", "body": "We don't just write code — we solve business problems with technology." },
-      { "title": "Scalable systems", "body": "Our solutions are built to grow alongside your business." },
-      { "title": "Integrated operations", "body": "We connect sales, marketing, customer relations and operations into one platform." },
-      { "title": "Ongoing support", "body": "We stay by your side after launch: maintenance, development, optimization." }
+      { "title": "Business-driven logistics", "body": "We don't just intermediate transport — we solve real logistics challenges, tailored to each client." },
+      { "title": "Scalable carrier network", "body": "Our carrier partnerships are built to grow alongside your shipping volume." },
+      { "title": "Integrated operations", "body": "We connect freight intermediation, wholesale trade and warehousing into one coherent flow." },
+      { "title": "Ongoing support", "body": "We stay by our partners' side throughout the collaboration: coordination, shipment tracking, route optimization." }
     ],
     "stats": [
-      { "value": "50+", "label": "projects" },
-      { "value": "3", "label": "years experience" },
-      { "value": "12", "label": "team members" }
+      { "value": "500 RON", "label": "fully paid-in share capital" },
+      { "value": "2026", "label": "year founded" },
+      { "value": "Oradea, Bihor", "label": "headquarters" }
     ]
   },
   "services": {
     "eyebrow": "// What we do",
-    "heading": "We build custom software, not templates.",
-    "intro": "Four focus areas cover the full digital scope of our partner companies — from custom systems to data-driven decision making.",
+    "heading": "We build tailored logistics solutions, not off-the-shelf services.",
+    "intro": "Three core areas cover our partners' logistics needs — from freight intermediation to trade and warehousing.",
     "items": [
       {
-        "title": "Custom software development",
-        "body": "Tailored systems that fit business needs exactly. We automate processes, reduce manual work and build scalable solutions."
+        "title": "Freight transport intermediation",
+        "body": "We connect shippers with verified carriers, optimize routes and negotiate favorable terms for every shipment."
       },
       {
-        "title": "Web systems and platforms",
-        "body": "Modern, fast and secure web applications that support sales, customer management and internal operations."
+        "title": "Non-specialized wholesale trade",
+        "body": "We facilitate efficient goods distribution to business partners, with flexibility in volume and product range."
       },
       {
-        "title": "Digital ecosystems",
-        "body": "Integrated systems that unite sales, marketing, customer support and data analysis into a single cohesive platform."
-      },
-      {
-        "title": "Data-driven business solutions",
-        "body": "We help you interpret and use your data so your business can make faster, more accurate decisions."
+        "title": "Warehousing services",
+        "body": "We offer temporary storage and inventory management solutions, tailored to each client's operational pace."
       }
     ],
-    "capabilities": ["CUSTOM SOFTWARE", "WEB & PLATFORM", "INTEGRATION", "DATA ANALYTICS"]
+    "capabilities": ["FREIGHT INTERMEDIATION", "WHOLESALE TRADE", "WAREHOUSING"]
   },
   "contact": {
     "eyebrow": "// Contact",
-    "heading": "Let's get in touch.",
-    "supporting": "Have an idea or a business challenge? We'll help you make it happen — we usually reply within 24 hours.",
+    "heading": "Let's talk about your shipment.",
+    "supporting": "Have goods to ship or a logistics challenge to solve? We'll help you find the right solution — we usually reply within 24 hours.",
     "phoneLabel": "Phone",
     "phone": "+40 757 340 751",
     "emailLabel": "Email",
-    "email": "info@vicimussolutions.com",
-    "emailSubject": "Quote request",
+    "email": "info@simsontrans.com",
+    "emailSubject": "Shipment enquiry",
     "copy": "Copy",
     "copied": "Copied"
   },
   "footer": {
     "company": {
-      "name": "VICIMUS SRL",
-      "address": "410542 Oradea, Str. Nojoridului nr. 41/A, Romania",
-      "vatLabel": "VAT",
-      "vat": "RO40580438",
+      "name": "SIMSON GLOBAL S.R.L.",
+      "address": "Municipiul Oradea, Str. Bârsei, Nr. 6, Bl. PB40, Ap. 1, Bihor County, Romania",
+      "vatLabel": "VAT / Tax ID",
+      "vat": "RO53988138",
       "regLabel": "Reg. no.",
-      "registration": "J05/543/2019",
+      "registration": "J2026011014001",
       "phoneLabel": "Tel",
       "phone": "+40 757 340 751",
       "emailLabel": "Email",
-      "email": "info@vicimussolutions.com"
+      "email": "info@simsontrans.com"
     },
-    "tagline": "Vicimus — where technology becomes business value.",
+    "tagline": "Simson Global — where logistics becomes a business advantage.",
     "mapAriaLabel": "Office location on map",
-    "copyright": "© 2026 Vicimus SRL. All rights reserved."
+    "copyright": "© 2026 Simson Global S.R.L. All rights reserved."
   },
   "lang": {
     "switchAriaLabel": "Switch language",

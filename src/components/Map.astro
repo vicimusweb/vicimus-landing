@@ -3,11 +3,11 @@ interface Props {
   ariaLabel: string;
 }
 const { ariaLabel } = Astro.props;
-const mapSrc = 'https://www.google.com/maps?q=410542+Oradea+Str.+Nojoridului+41A&output=embed';
+const mapSrc = 'https://www.google.com/maps?q=Oradea+Str.+Barsei+6&output=embed';
 ---
 <div class="map-wrap relative border border-border rounded-md overflow-hidden bg-surface" data-map-src={mapSrc}>
   <div class="map-placeholder aspect-[16/10] w-full flex items-center justify-center text-muted font-mono text-xs uppercase tracking-widest">
-    <span>Oradea · Str. Nojoridului 41/A</span>
+    <span>Oradea · Str. Bârsei nr. 6</span>
   </div>
   <iframe
     class="map-iframe absolute inset-0 w-full h-full opacity-0 transition-opacity duration-700"
