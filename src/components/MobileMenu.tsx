@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { Locale } from '../i18n/utils';
 
 interface NavItem { href: string; label: string }
@@ -33,9 +34,13 @@ export default function MobileMenu({ locale, navItems, labels }: Props) {
         triggerRef.current?.focus();
       }
       if (e.key === 'Tab' && panelRef.current) {
-        const focusables = panelRef.current.querySelectorAll<HTMLElement>(
-          'a, button, [tabindex]:not([tabindex="-1"])'
-        );
+        // The close button lives in the header, outside the portaled panel, so include it in the trap.
+        const focusables = [
+          ...(triggerRef.current ? [triggerRef.current] : []),
+          ...Array.from(
+            panelRef.current.querySelectorAll<HTMLElement>('a, button, [tabindex]:not([tabindex="-1"])')
+          ),
+        ];
         if (focusables.length === 0) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
@@ -77,7 +82,7 @@ export default function MobileMenu({ locale, navItems, labels }: Props) {
         <span className={`block h-px w-6 bg-current transition-transform ${open ? '-translate-y-[7px] -rotate-45' : ''}`}></span>
       </button>
 
-      {open && (
+      {open && typeof document !== 'undefined' && createPortal(
         <div
           id="mobile-menu-panel"
           ref={panelRef}
@@ -109,7 +114,9 @@ export default function MobileMenu({ locale, navItems, labels }: Props) {
               {labels.ro}
             </a>
           </div>
-        </div>
+        </div>,
+        // Portal to <body>: the header's backdrop-filter would otherwise trap this fixed panel inside the 64px bar.
+        document.body,
       )}
     </>
   );

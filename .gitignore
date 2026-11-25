@@ -4,3 +4,9 @@ dist
 .env
 .env.production
 .DS_Store
+
+# Design working files (doczidev rule): stay local
+.impeccable/
+PRODUCT.md
+DESIGN.md
+design-lab/
