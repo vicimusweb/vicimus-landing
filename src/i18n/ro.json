@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Simson Global — Intermediere transport marfă & logistică",
-    "description": "Sisteme de transport care duc afacerea ta mai departe. Intermediere transport marfă, comerț cu ridicata și depozitare, din Oradea.",
+    "description": "Sisteme de transport care duc afacerea ta mai departe. Intermediere transport marfă, comerț cu ridicata și depozitare, din București.",
     "ogLocale": "ro_RO"
   },
   "brand": { "name": "SIMSON GLOBAL" },
@@ -35,7 +35,7 @@
     "stats": [
       { "value": "500 RON", "label": "capital social vărsat integral" },
       { "value": "2026", "label": "anul înființării" },
-      { "value": "Oradea, Bihor", "label": "sediu social" }
+      { "value": "București", "label": "sediu social" }
     ]
   },
   "services": {
@@ -73,7 +73,7 @@
   "footer": {
     "company": {
       "name": "SIMSON GLOBAL S.R.L.",
-      "address": "Municipiul Oradea, Str. Bârsei, Nr. 6, Bl. PB40, Ap. 1, Jud. Bihor, România",
+      "address": "Municipiul București, Str. Nerva Traian, Nr. 27-33, Scara B, Etaj 1, 031044, România",
       "vatLabel": "CUI",
       "vat": "RO53988138",
       "regLabel": "Reg. com.",
